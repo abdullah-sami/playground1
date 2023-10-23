@@ -1,0 +1,104 @@
+
+
+
+
+
+.overview .container_main{
+    background: url("../img/home-overview-image.jpg") 100%;
+    background-repeat: no-repeat;
+    background-position: 11% 100%;
+    border-radius: 5px;
+    padding: 5vh;
+
+}
+
+.overview .container_main span{
+    display: block;
+    background: rgba(0, 0, 0, 0.344);
+    padding: 1vw 2vw;
+    margin-top: 15vh;
+    backdrop-filter: blur(3px);
+}
+.overview .container_main *{
+    color: white;
+}
+.overview .container_main .container_slogan{
+    margin: 5vh 0;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+.about .container_main button{
+    color: white;
+    background: var(--cl1);
+}
+
+
+
+
+
+
+
+
+
+.gallery .container_main span .portfolio_box{
+    width: 65vw;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.gallery .container_main span .portfolio_box .portfolio_itm img{
+    width: 15vw;
+    margin: 1vw .5vw;
+}
+
+.gallery .container_main span .portfolio_box button{
+    margin: 10vh 5vw;
+    color: white;
+    height: 5vh;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reviews .container_main span{
+    display: flex;
+    justify-content: space-around;
+}
+
+.reviews .container_main span .customer{
+    width: 25vw;
+    height: 30vh;
+    text-align: center;
+}
+
+.reviews .container_main span .customer img{
+    width: 15vw;
+    border-radius: 50%;
+
+}.reviews .container_main span .customer h5{
+    font-size: 18px;
+    margin-top: 2vw;
+}
+.reviews .container_main span .customer h6{
+    font-size: 14px;
+    color: rgb(165, 165, 165);
+    margin-bottom: 2vh;
+}

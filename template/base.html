@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %} {% endblock %}</title>
+
+    <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/{% block css %} {% endblock %}.css">
+
+</head>
+<body  onload="preloader()">
+
+
+
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <span class="loader_ball"></span>
+            <span class="loader_ball"></span>
+            <span class="loader_ball"></span>
+        </div>
+    </div>
+
+
+
+
+    <header>
+
+        <div class="logo">
+            <a href="../"><img src="static/img/logo-mini.png" alt="DuskyDawn-Logo"><h1>Dusky Dawn</h1></a>
+        </div>
+
+        <menu>
+            {% block menu %}{% endblock %}
+        </menu>
+
+    </header>
+
+    <main id="main">
+
+        
+            {% block main %}{% endblock %}
+
+
+        
+
+
+        <!-- <div class="shafts">
+            <img src="static/img/gear-shaft-1.png" alt="" class="shaft shaft1">
+            <img src="static/img/gear-shaft-2.png" alt="" class="shaft shaft2">
+        </div> -->
+
+    </main>
+    
+
+    <footer>
+        © all rights reserved 2023. duskydawn.rf.gd
+    </footer>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="static/js/app.js"></script>
+    <script src="static/js/{%block js%}{%endblock%}.js"></script>
+
+
+
+</body>
+</html>

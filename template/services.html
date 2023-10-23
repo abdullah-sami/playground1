@@ -1,0 +1,357 @@
+{% extends 'base.html' %}
+
+{% block title %}DuskyDawn | Services{% endblock %}
+
+{% block css %}services{% endblock %}
+
+
+
+
+{% block menu %}
+
+            <ul class="menu_pages">
+                <li><a href="../" class="pages">Home</a></li>
+
+                <li><a href="services" class="pages active_page">Services</a></li>
+
+                <li><a href="team" class="pages">Team</a></li>
+
+                <li><a href="pricing" class="pages">Pricing</a></li>
+
+                <li><a href="contact" class="pages">Contact</a></li>
+            </ul>
+
+
+
+            <ul class="menu_itms">
+                <li><a href="#srv_over" class="menu_itm active_itm" id="srv_over_btn">Overview</a></li>
+                <li><a href="#all_services" class="menu_itm" id="srv_all_btn">All</a></li>
+                <li><a href="#web" class="menu_itm" id="web_btn">Web</a></li>
+                <li><a href="#modeling" class="menu_itm" id="mod_btn">Modeling</a></li>
+                <li><a href="#animation" class="menu_itm" id="anim_btn">Animation</a></li>
+            </ul>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+{% block main %}
+
+
+
+<div class="container srv_overview" id="srv_over">
+    <h2>Pick yours!</h2>
+    <hr>
+
+    <div class="container_main">
+
+        <span>
+
+            <h3 class="container_slogan">DuskDawn provides a wide variety of IT solutions</h3><br>
+
+            <p>Pick out your necessity from our services</p>
+
+            
+
+            <button onclick="location.assign('#all_services')">All services</button>
+
+        </span>
+    
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="container all_srv" id="all_services">
+    <h2>Services</h2>
+    <hr>
+
+    <div class="container_main">
+
+        
+            <div class="srv_itm" id="srv_itm1">
+                <img src="static/img/services/web.png" alt="web-image">
+                <h4>Web solutions</h4>
+                <button onclick="location.assign('#web')">More</button>
+            </div>
+            <div class="srv_itm" id="srv_itm2">
+                <img src="static/img/services/3d.png" alt="modeling-image">
+                <h4>Modeling</h4>
+                <button onclick="location.assign('#modeling')">More</button>
+            </div>
+            <div class="srv_itm" id="srv_itm3">
+                <img src="static/img/services/animation.png" alt="animation-image">
+                <h4>Animation</h4>
+                <button onclick="location.assign('#animation')">More</button>
+            </div>
+            
+
+            
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container web" id="web">
+    <h2>Web</h2>
+    <hr>
+
+    <div class="container_main">
+
+        <div class="srv_itm_card web_itm" id="web_itm1">
+            <img src="static/img/services/full-stack-web.png" alt="web-image">
+            <h4>Full-stack development</h4>
+            <table>
+                <tr>
+                    <th>Features</th>
+                </tr>
+                <tr>
+                    <td><span class="checkico1" id="checkico1"></span>Astounding layout</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico1"></span>Mobile-friendly</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico1"></span>django Framework</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico1"></span>Full tech support</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="srv_itm_card web_itm" id="web_itm2">
+            <img src="static/img/services/front-end.png" alt="web-image">
+            <h4>Front-end development</h4>
+            <table>
+                <tr>
+                    <th>Features</th>
+                </tr>
+                <tr>
+                    <td><span class="checkico1"></span>Stylish look</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico1"></span>Mobile-friendly</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico1"></span>Bootstrap Framework</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico1"></span>Customizable</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="srv_itm_card web_itm" id="web_itm3">
+            <img src="static/img/services/seo.png" alt="web-image">
+            <h4>SEO</h4>
+            <table>
+                <tr>
+                    <th>Features</th>
+                </tr>
+                <tr>
+                    <td><span class="checkico1"></span>Rank top</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico1"></span>Entire or partial content</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico1"></span>Reasonable</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico1"></span>Full tech support</td>
+                </tr>
+            </table>
+        </div>
+    
+        <button onclick="location.assign('contact')">Hire us</button>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container modeling" id="modeling">
+    <h2>Modeling</h2>
+    <hr>
+
+    <div class="container_main">
+
+        <div class="srv_itm_card mod_itm" id="mod_itm1">
+            <img src="static/img/services/modeling.png" alt="modeling-image">
+            <h4>Product Modeling</h4>
+            <table>
+                <tr>
+                    <th>Features</th>
+                </tr>
+                <tr>
+                    <td><span class="checkico2" id="checkico2"></span>Astounding layout</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico2"></span>Mobile-friendly</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico2"></span>django Framework</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico2"></span>Full tech support</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="srv_itm_card mod_itm" id="mod_itm2">
+            <img src="static/img/services/scenery.png" alt="mod-image">
+            <h4>Game, architecture & home appliance</h4>
+            <table>
+                <tr>
+                    <th>Features</th>
+                </tr>
+                <tr>
+                    <td><span class="checkico2"></span>Stylish look</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico2"></span>Mobile-friendly</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico2"></span>Bootstrap Framework</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico2"></span>Customizable</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="srv_itm_card mod_itm" id="mod_itm3">
+            <img src="static/img/services/scenery.png" alt="mod-image">
+            <h4>Game, architecture & home appliance</h4>
+            <table>
+                <tr>
+                    <th>Features</th>
+                </tr>
+                <tr>
+                    <td><span class="checkico2"></span>Stylish look</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico2"></span>Mobile-friendly</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico2"></span>Bootstrap Framework</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico2"></span>Customizable</td>
+                </tr>
+            </table>
+        </div>
+
+        <button onclick="location.assign('contact')">Hire us</button>
+        
+    
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="container animation" id="animation">
+    <h2>Animation</h2>
+    <hr>
+
+    <div class="container_main">
+
+        <div class="srv_itm_card anim_itm" id="anim_itm1">
+            <img src="static/img/services/logo-animation.png" alt="modeling-image">
+            <h4>Logo Animation</h4>
+            <table>
+                <tr>
+                    <th>Features</th>
+                </tr>
+                <tr>
+                    <td><span class="checkico3" id="checkico3"></span>Astounding layout</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico3"></span>Mobile-friendly</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico3"></span>django Framework</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico3"></span>Full tech support</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="srv_itm_card anim_itm" id="anim_itm2">
+            <img src="static/img/services/product.png" alt="anim-image">
+            <h4>Product Animation</h4>
+            <table>
+                <tr>
+                    <th>Features</th>
+                </tr>
+                <tr>
+                    <td><span class="checkico3"></span>Stylish look</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico3"></span>Mobile-friendly</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico3"></span>Bootstrap Framework</td>
+                </tr>
+                <tr>
+                    <td><span class="checkico3"></span>Customizable</td>
+                </tr>
+            </table>
+        </div>
+
+        <button onclick="location.assign('contact')">Hire us</button>
+        
+    
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}
+
+
+
+
+{% block js %}services{%endblock%}

@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+
+{% block title %}DuskyDawn{% endblock %}
+
+{% block css %}index{% endblock %}
+
+
+
+
+{% block menu %}
+
+            <ul class="menu_pages">
+                <li><a href="../" class="pages active_page">Home</a></li>
+                <li><a href="services" class="pages">Services</a></li>
+                <li><a href="team" class="pages">Team</a></li>
+                <li><a href="pricing" class="pages">Pricing</a></li>
+                <li><a href="contact" class="pages">Contact</a></li>
+            </ul>
+
+
+            <ul class="menu_itms">
+                <li><a href="#overview" class="menu_itm  active_itm" id="overview_btn">Overview</a></li>
+                <li><a href="#about" class="menu_itm" id="about_btn"   onclick="">About</a></li>
+                <li><a href="#gallery" class="menu_itm"  id="gallery_btn"  onclick="">Gallery</a></li>
+                <li><a href="#reviews" class="menu_itm"   id="reviews_btn" onclick="">Reviews</a></li>
+            </ul>
+
+{% endblock %}
+
+
+
+
+{% block main %}
+
+
+
+<div class="container overview" id="overview">
+    <h2>Welcome!</h2>
+    <hr>
+
+    <div class="container_main">
+
+        <span>
+
+            <h3 class="container_slogan">Your gateway to a diverse range of digital solutions </h3><br>
+
+            <p>CYBER is designed to elevate your online presence and bring your creative visions to life</p>
+
+            
+
+            <button onclick=hire()>Hire Us</button>
+
+        </span>
+    
+    </div>
+
+</div>
+
+<div class="container about" id="about">
+    <h2>Who are we?</h2>
+    <hr>
+
+    <div class="container_main">
+
+        <span>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, debitis? Ex voluptas et pariatur dolore dignissimos debitis error sequi explicabo, eligendi esse at, fuga voluptatem accusantium adipisci reiciendis veniam nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro dignissimos nisi officiis fugit omnis beatae, quis doloribus, ipsa possimus nihil magni amet dolores laborum inventore similique modi doloremque ducimus voluptatum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas labore delectus, atque quasi placeat impedit dolorem vitae porro nulla?
+            </p>
+
+            
+
+            <button onclick="location.assign('#gallery')">View works</button>
+
+        </span>
+    
+    </div>
+
+
+</div>
+
+
+<div class="container gallery" id="gallery">
+    <h2>Check out our projects</h2>
+    <hr>
+
+
+    <div class="container_main">
+
+        <span>
+
+            
+            <div class="portfolio_box">
+                <div class="portfolio_itm" id="itm1">
+                    <img src="static/img/portfolio/environment-1.jpg" alt="">
+                </div>
+                <div class="portfolio_itm" id="itm2">
+                    <img src="static/img/portfolio/environment-2.jpg" alt="">
+                </div>
+                <div class="portfolio_itm" id="itm3">
+                    <img src="static/img/portfolio/modeling-1.jpg" alt="">
+                </div>
+                <div class="portfolio_itm" id="itm4">
+                    <img src="static/img/portfolio/modeling-2.jpg" alt="">
+                </div>
+                <div class="portfolio_itm" id="itm5">
+                    <img src="static/img/portfolio/modeling-3.jpg" alt="">
+                </div>
+                <div class="portfolio_itm" id="itm6">
+                    <img src="static/img/portfolio/product-1.jpg" alt="">
+                </div>
+                <div class="portfolio_itm" id="itm7">
+                    <img src="static/img/portfolio/modeling-5.jpg" alt="">
+                </div>
+                <div class="portfolio_itm" id="itm8">
+                    <img src="static/img/portfolio/environment-3.jpg" alt="">
+                </div>
+                <div class="portfolio_itm" id="itm9">
+                    <img src="static/img/portfolio/modeling-4.jpg" alt="">
+                </div>
+
+                <button onclick="location.assign('works')">Explore all</button>
+
+            </div>
+
+            
+
+            
+
+        </span>
+    
+    </div>
+
+
+</div>
+
+
+<div class="container reviews" id="reviews">
+    <h2>Listen to our customers</h2>
+    <hr>
+
+    <div class="container_main">
+        <span>
+
+            <div class="customer customer1">
+                <img src="static/img/customer-1.webp" alt="">
+                <h5>Rahul Sankar</h5>
+                <h6>CEO, xyz org.</h6>
+                <p>Says, <q>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing.</q></p>
+            </div>
+            <div class="customer customer2">
+                <img src="static/img/customer-2.webp" alt="">
+                <h5>Alex Tate</h5>
+                <h6>CEO, abc inc.</h6>
+                <p>Says, <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, asperiores tempora numquam enim deleniti temporibus.</q></p>
+            </div>
+
+        </span>
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+
+
+{% block js %}index{%endblock%}

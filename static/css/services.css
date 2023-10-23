@@ -1,0 +1,231 @@
+
+.srv_overview .container_main{
+    background: url("../img/service_overview-img.jpg") 100%;
+    background-repeat: no-repeat;
+    background-position: 11% 100%;
+    border-radius: 5px;
+    padding: 5vh;
+
+}
+
+.srv_overview .container_main span{
+    display: block;
+    background: rgba(0, 0, 0, 0.344);
+    padding: 1vw 2vw;
+    margin-top: 15vh;
+    backdrop-filter: blur(5px);
+    filter: brightness(1.6);
+}
+.srv_overview .container_main *{
+    color: white;
+}
+.srv_overview .container_main .container_slogan{
+    margin: 5vh 0;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.all_srv .container_main{
+    display: grid;
+    grid-template-areas: 'srv1 srv2 srv3';
+}
+
+.all_srv .container_main #srv_itm1{
+    grid-area: srv1;
+}
+.all_srv .container_main #srv_itm2{
+    grid-area: srv2;
+}
+.all_srv .container_main #srv_itm3{
+    grid-area: srv3;
+}
+
+.all_srv .container_main .srv_itm{
+    width: 15vw;
+    text-align: center;
+}
+.all_srv .container_main .srv_itm img{
+    width: 15vw;
+}
+.all_srv .container_main .srv_itm button{
+    
+    color: white;
+    background: var(--cl1);
+}
+.all_srv .container_main #srv_itm2 button{
+    
+    
+    background: var(--cl2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.web .container_main{
+    display: grid;
+    grid-template-areas: 'web1 web2 web3'
+    'wbtn wbtn wbtn';
+}
+.web .container_main #web_itm1{
+    grid-area: web1;
+}
+.web .container_main #web_itm2{
+    grid-area: web2;
+}
+.web .container_main #web_itm3{
+    grid-area: web3;
+}
+
+.web .container_main .srv_itm_card{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.web .container_main .srv_itm_card img{
+    width: 10vw;
+}
+.web .container_main .srv_itm_card h4{
+    margin: 1vw;
+}
+
+
+
+.web .container_main .web_itm table {
+    margin: 1vw ;
+}
+.web .container_main .web_itm table tr td span{
+    margin: 1vw;
+}
+.web .container_main button{
+    grid-area: wbtn;
+    margin: 2vw auto;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modeling .container_main{
+    display: grid;
+    grid-template-areas: 'mod1 mod2 mod3'
+    'mbtn mbtn mbtn';
+
+}
+.modeling .container_main #mod_itm1{
+    grid-area: mod1;
+}
+.modeling .container_main #mod_itm2{
+    grid-area: mod2;
+}
+.modeling .container_main #mod_itm3{
+    grid-area: mod3;
+}
+
+
+.modeling .container_main .srv_itm_card{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modeling .container_main .srv_itm_card img{
+    width: 10vw;
+}
+.modeling .container_main .srv_itm_card h4{
+    text-align: center;
+    margin: 1vw;
+}
+
+
+
+.modeling .container_main .mod_itm table {
+    margin: 1vw ;
+}
+.modeling .container_main .mod_itm table tr td span{
+    margin: 1vw;
+}
+.modeling .container_main button{
+    background: var(--cl1);
+    grid-area: mbtn;
+    margin: 2vw auto;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.animation .container_main{
+    display: grid;
+    grid-template-areas: 'anim1 anim2'
+    'abtn abtn';
+}
+.animation .container_main #anim_itm1{
+    grid-area: anim1;
+}
+.animation .container_main #anim_itm2{
+    grid-area: anim2;
+}
+
+.animation .container_main .srv_itm_card{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.animation .container_main .srv_itm_card img{
+    width: 10vw;
+}
+.animation .container_main .srv_itm_card h4{
+    text-align: center;
+    margin: 1vw;
+}
+
+
+
+.animation .container_main .anim_itm table {
+    margin: 1vw ;
+}
+.animation .container_main .anim_itm table tr td span{
+    margin: 1vw;
+}
+.animation .container_main button{
+    grid-area: abtn;
+    margin: 2vw auto;
+    color: white;
+}

@@ -1,0 +1,358 @@
+:root{
+    --cl1: #ff626f;
+    --cl2: blueviolet;
+    --cl3: rgb(31, 31, 31);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+  
+
+
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--cl3);
+    transition: .4s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+body{
+    display: grid;
+    grid-template-areas: 'pre pre pre pre pre pre'
+    'head body body body body body'
+    'foot foot foot foot foot foot';
+}
+
+
+
+
+
+.preloader{
+    grid-area: pre;
+    width: 100vw;
+    height: 100vh;
+    
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: var(--cl2);
+    filter: brightness(0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+}
+
+
+.preloader .loader{
+    width: 5vw;
+    height: 5vw;
+    text-align: center;
+}
+
+.preloader .loader_ball{
+    display: inline-block;
+    margin: auto;
+    width: 1vw;
+    height: 1vw;
+    background: wheat;
+    border-radius: 50%;
+    transform: translateY(-5px);
+    animation: loader;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    filter: brightness(.7);
+}
+.preloader .loader_ball:nth-child(2){
+    animation-delay: .3s;
+}
+.preloader .loader_ball:nth-child(3){
+    animation-delay: .6s;
+}
+
+
+
+
+
+
+header{
+    width: 20vw;
+    grid-area: head;
+    height: 90vh;
+    padding: 1vw;
+    display: grid;
+    grid-template-areas: 'logo logo logo'
+    'menu menu menu';
+}
+
+header .logo{
+    grid-area: logo;
+    text-align: center;
+}
+header .logo img{
+    width: 15vw;
+    margin: 1vh;
+}
+header .logo a h1{
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+
+header menu{
+    grid-area: menu;
+    margin-left: 2vw;
+    display: grid;
+    grid-template-areas: 'page page itm';
+
+}
+
+header menu .menu_pages{
+    grid-area: page;
+    display: flex;
+    height: 40vh;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 10vw;
+}
+header menu .menu_pages li .pages{
+    font-size: 20px;
+
+
+}
+
+
+
+
+header menu .menu_itms{
+    grid-area: itm;
+    height: 40vh;
+    border-left: 3px solid rgb(167, 167, 167);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+header menu .menu_itms li a{
+    padding: 2vw;
+}
+
+
+
+
+
+header menu a:hover{
+    color: var(--cl1);
+
+}
+
+.active_page{
+    color: var(--cl2);
+}
+.active_itm{
+    color: var(--cl1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    grid-area: body;
+    height: 75vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 70vw;
+    margin: auto;
+    margin-top: 15vh;
+
+}
+
+
+
+main .shafts{
+    top: 0;
+    right: 0;
+    position: absolute;
+    overflow: hidden;
+    width: 25vw;
+    height: 25vw;
+    margin-top: 1vh;
+}
+main .shafts .shaft{
+    position: absolute;
+}
+main .shafts .shaft1{
+    right: -5vw;
+    width: 10vw;
+
+    transform: rotate(360deg);
+}
+main .shafts .shaft2{
+    width: 7vw;
+    right: 2vw;
+    top: 7.2vw;
+
+    transform: rotate(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    width: 65vw;
+    height: 75vh;
+    
+}
+
+.container hr{
+    height: 4px;
+    background: rgb(224, 224, 199);
+    margin: 1vh 0;
+}
+
+
+.container_main{
+    margin: 5vh 0;
+    height: 70%;
+}
+
+.container_main .container_slogan{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button{
+    font-size: 14px;
+    padding: 1vh 2vw;
+    background: var(--cl2);
+    margin: 5vh 0;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    grid-area: foot;
+    background: linear-gradient(to right, var(--cl1), var(--cl2));
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes loader{
+    0%{
+        transform: translateY(-5px);
+        
+    }
+    50%{
+        transform: translateY(5px);
+        filter: brightness(1.4);
+        
+    }
+    100%{
+        transform: translateY(-5px);
+        
+    }
+}
+
+
+
+
+
